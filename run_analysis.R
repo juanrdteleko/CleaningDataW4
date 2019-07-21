@@ -66,9 +66,8 @@ colnames(exted_alldata_comp)<- gsub("[()]","",colnames(exted_alldata_comp))
 data_grouped <- group_by(exted_alldata_comp,Subjects,Activities)
 average <- summarize_each(data_grouped,mean)
 colnames(average)[3:81]<-paste("Average of",colnames(average)[3:81],sep = " ")  ##in order to be tidy all the names have to be accurrate and descriptive
+average
 
-
-##Finnally I am going to write out the dataset to a txt file
-
-write.table(average, "average.txt", sep="\t", col.names=T,row.names = FALSE)
-write.csv(average, "average.csv")
+##Funtions used to write the dataset out to a txt file
+##write.table(average, "average.txt", sep="\t", col.names=T,row.names = FALSE)
+##write.csv(average, "average.csv")
