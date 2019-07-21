@@ -30,12 +30,12 @@ calculating variables from the time and frequency domain. See
 ‘features\_info.txt’ for more details.
 
 For each record it is provided:
-===============================
+======================================
 
--   a dataset with the mean and standard deviation for some variables
-    described in codebook\_average
--   A codebook called codebook\_average explaning the whole dataset, the
-    meaing of each column and measurements
+- a dataset with the mean and standard deviation for some variables described in codebook_average
+- A codebook called codebook_average explaning the whole dataset, the meaing of each column and measurements
+- From the 561 vector provided, only the sd and mean signals have been taken. Grouped by suject and activity the mean has been done for each variable.
+- 79 variable and 180 measurements. The first two columns represents the subject id and the activiy description.
 
 Origin of the data:
 ===================
