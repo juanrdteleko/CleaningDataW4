@@ -70,5 +70,5 @@ colnames(average)[3:81]<-paste("Average of",colnames(average)[3:81],sep = " ")  
 
 ##Finnally I am going to write out the dataset to a txt file
 
-write.table(average, "average.txt", sep="\t", col.names=T)
+write.table(average, "average.txt", sep="\t", col.names=T,row.names = FALSE)
 write.csv(average, "average.csv")
